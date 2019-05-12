@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible">
+    <title>фин учёт</title>
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+      .divide {
+        display: flex;
+        flex-direction: row;
+      }
+      .add {
+        flex: 1;
+      }
+      .unadd {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Учти деньгу</h1>
+    </header>
+    <section>
+      <form class="innp" action="" method="post">
+        <input type="number" name="in"  id="in" value="" placeholder="введите доходы/расходы" />
+        <button type="button" name="plus" id="plus" onclick="addy()" >+</button>
+        <button type="button" name="minus" id="minus" onclick="unaddy()" >-</button>
+      </form>
+      <p id="date"></p>
+      <p>Сейчас доступно</p>
+      <p id="val">0</p>
+    </section>
+    <div class="divide">
+      <section class="add">
+        <h4>Доходы</h4>
+        <div id="add">
+
+        </div>
+      </section>
+      <section class="unadd">
+        <h4>Расходы</h4>
+        <p id="exp"></p>
+        <div id="unadd">
+
+        </div>
+      </section>
+    </div>
+    <!--<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="script.js">
+
+    </script>
+  </body>
+</html>
