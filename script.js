@@ -21,7 +21,7 @@ localStorage.setItem('flag', flag);
 
 function addy() {
   const field = Number(document.getElementById('in').value);
-  document.getElementById('add').innerHTML += `${field} <br /> ${document.getElementById('add').innerHTML}`;
+  document.getElementById('add').innerHTML = `${field} <br /> ${document.getElementById('add').innerHTML}`;
   const val = Number(document.getElementById('val').innerHTML);
   let res = 0;
   res = val + field;
